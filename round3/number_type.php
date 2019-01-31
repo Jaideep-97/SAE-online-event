@@ -1,8 +1,15 @@
 <?php
 function count_type($type)
 {
-    $con=mysqli_connect("localhost","root","mysql","sae_event") or die(mysqli_error($con));
-$userid=$_SESSION['id'];
+  $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+  $server = $url["host"];
+  $username = $url["user"];
+  $password = $url["pass"];
+  $db = substr($url["path"], 1);
+
+  $con = new mysqli($server, $username, $password, $db);
+  session_start();$userid=$_SESSION['id'];
 $sel_query="Select * from items_users where type='$type' and userid='$userid'";
 $sel_query_res=mysqli_query($con,$sel_query);
 $c= mysqli_num_rows($sel_query_res);
