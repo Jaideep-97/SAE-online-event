@@ -46,7 +46,7 @@ if($arr[0]==1)
     <div class="container">
 
 	 <div>
-             <button class="button button3" onclick="location.href='shop.php'">Find items</button>
+             <button class="button button3" onclick="window.location=document.referrer;">Find items</button>
              <h2 style="color:#3498DB   ; float: right; font-family: Verdana, Arial, Helvetica, sans-serif"><b>Time left: <span id="time" class="text-danger"></span></b></h2></div>
              <h3> Rating for the round will be 0 if the car is left incomplete.</h3>
 
