@@ -1,12 +1,7 @@
 
-<!DOCTYPE html>
-<?php 
-require 'includes/common.php';
-
-?>
 <html lang="en" class="no-js">
 	<head>
-            
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -27,8 +22,8 @@ require 'includes/common.php';
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
-		
-		
+
+
                 <title>Login</title>
                  <style>
       html, body, div, span, applet, object, iframe,
@@ -290,24 +285,24 @@ input {
       <div class="container my-auto">
          <?php
                                           include 'forgot_script.php';
-    
+
     ?>
-    
+
     <form class="sign-up" method="POST" action="<?php echo htmlspecialchars('forgot_script.php'); ?>" class="form-group">
     <h3 class="sign-up-title">Forgot Password?</h3>
-   
+
     <input type="text" class="sign-up-input" id="name" name="name" class="col-md-4" placeholder="What's your name?*" required autofocus>
     <input type="text" class="sign-up-input" id="contact" name="contact" class="col-md-4" placeholder="What's your contact?*" required autofocus>
-    
+
     <input type="text" class="sign-up-input" id="email" name="email" class="col-md-4" placeholder="What's your email?*" required autofocus>
-    
-   
+
+
     <input type="submit" name="submit" value="Log me in!" class="sign-up-button">
   </form>
       </div>
     </header>
 
-                                           
+
        <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -319,8 +314,8 @@ input {
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-  
-                
-               
+
+
+
 	</body>
 </html>

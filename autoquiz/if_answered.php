@@ -3,7 +3,17 @@
 
 function if_answered($quiz_id)
 {
-  $con = mysqli_connect("localhost", "root", "mysql", "sae_event") or die(mysqli_error($con));
+
+  $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+  $server = $url["host"];
+  $username = $url["user"];
+  $password = $url["pass"];
+  $db = substr($url["path"], 1);
+
+  $con = new mysqli($server, $username, $password, $db);
+
+
   $user_id= $_SESSION['id'];
 
     $select_query="Select * from quiz_users where qid='$quiz_id' and uid='$user_id'";
