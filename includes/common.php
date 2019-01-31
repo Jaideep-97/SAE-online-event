@@ -1,4 +1,11 @@
 <?php
-$con = mysqli_connect("ec2-54-235-67-106.compute-1.amazonaws.com", "epbhlgadsoproh", "1ca18e9c25d1a874b0c99065bc566a031786bf3fb9cd81ed902914d4fe248aac", "ddr77ibfqdte2b") or die(mysqli_error($con));
+$url = parse_url(getenv("mysql://b3b379651f5f1c:f0464a4a@us-cdbr-iron-east-03.cleardb.net/heroku_f593c8177df17a1?reconnect=true"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
+$conn = new mysqli($server, $username, $password, $db);
 session_start();
 ?>
