@@ -20,5 +20,5 @@ $bal=$row2[0]-$row1[0];
 //$bal=$row1[0];
 $update_query="Update users set balance='$bal' where id='$user_id'";
 $update_query_res=mysqli_query($con,$update_query);
-header("Location: $_SERVER['HTTP_REFERER']");
+header("Location: ${_SERVER['HTTP_REFERER']}");  
 ?>
