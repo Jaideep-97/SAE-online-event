@@ -24,4 +24,10 @@ $update_query_res=mysqli_query($con,$update_query);
 
 ?>
 <script>
-window.location=document.referrer;</script>
+if ('referrer' in document) {
+       window.location = document.referrer;
+       /* OR */
+       //location.replace(document.referrer);
+   } else {
+       window.history.back();
+   }</script>
