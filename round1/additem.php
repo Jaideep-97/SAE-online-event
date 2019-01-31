@@ -20,5 +20,5 @@ $bal=$row2[0]-$row1[0];
 //$bal=$row1[0];
 $update_query="Update users set balance='$bal' where id='$user_id'";
 $update_query_res=mysqli_query($con,$update_query);
-echo $_SERVER['HTTP_REFERER']);
+header("location:javascript://history.go(-1)");
 ?>
