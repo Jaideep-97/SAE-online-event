@@ -96,10 +96,10 @@ require 'includes/common.php';
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="round3/shop3.php">Play now!</a>
 
              <?php }
-             else if($arr['submit3']=='1' && $arr['qual3']=='1'){ ?>
+            /* else if($arr['submit3']=='1' && $arr['qual3']=='1'){ ?>
                  <a class="btn btn-primary btn-xl js-scroll-trigger" href="index.php">Play now!</a>
 
-               <?php }
+               <?php } */
                                               else if($arr[0]=='1' && $arr[1]=='1' && $arr[2]=='1' && $arr[3]=='0') { ?>
 
                  <a class="btn btn-primary btn-xl js-scroll-trigger" href="round4/shop4.php">Play now!</a>

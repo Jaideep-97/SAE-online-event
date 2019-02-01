@@ -165,7 +165,7 @@ window.addEventListener("popstate", function() {
              $upd="Update users set qual2=1 where id='$uid'";
          $upd_q=mysqli_query($con,$upd) or die(mysqli_error($con));
          ?>
-            <button class="button button3" onclick="location.href='../round3/shop3.php'">Round 3</button>
+              <button class="button button3" onclick="location.href='../index.php'" >HOME!</button>
             </div>
          <?php
                 break;
@@ -181,6 +181,7 @@ window.addEventListener("popstate", function() {
          <div class="container">
          <div style="text-align: center;" >
         <h2 style="font-family: 'Georgia', serif; color:white  ;">Sorry! You've been eliminated! </h2>
+          <button class="button button3" onclick="location.href='../index.php'" >HOME!</button>
 
 </div>
          <?php

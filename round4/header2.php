@@ -11,11 +11,11 @@
                 a{
                     text-decoration: none;
                 }
-               
+
                 </style>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		 <title>ROADRANGERS</title>
+		 <title>AUTOMANIA</title>
 <meta name="description" content="A responsive web app template with common components like profile, list, tabs, menu views. Made for Codrops exclusively.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="output.css">
@@ -25,7 +25,7 @@
 		<!--[if lt IE 7]>
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
-		
+
 		<div class="bg-indigo-darker text-center p-4 px-6 flex items-center">
 			<div class="hidden lg:block lg:w-1/4 xl:w-1/5 pr-8">
                             <a href="../index.php" class="text-sm text-right text-white py-2 px-3 hover:text-grey-dark no-underline hidden lg:block lg:w-1/3 px-6"><b>ROADRANGERS</b></a>
@@ -37,7 +37,7 @@
 			<div class="flex flex-grow items-center lg:w-3/4 xl:w-4/5">
 				<span class="relative w-full">
 					<div class="absolute search-icon" style="top: .5rem; left: .8rem;">
-				
+
 				</div>
 			</span>
 				<a href="logout.php" class="text-sm text-right text-white py-2 px-3 hover:text-grey-dark no-underline hidden lg:block lg:w-1/3 px-6">LOGOUT</a>
@@ -72,8 +72,8 @@
 							</div>
 						</div>
 						<ul class="text-grey lg:text-grey-dark list-reset leading-loose mt-2" id="sidenav-categories">
-							<?php 
-                                                        
+							<?php
+
                                                         $uid=$_SESSION['id'];
                                                         $sel="Select submit1,submit2,submit3,submit4 from users where id='$uid'";
                                                         $selres=mysqli_query($con,$sel) or die(mysqli_error($con));
@@ -87,7 +87,7 @@
                                                             </a>
 							</li>
                                                         <?php } ?>
-                                                        <?php 
+                                                        <?php
                                                         if($arr[1]==1) {
                                                         ?>
                                                         <li class="hover:text-indigo-dark hover:cursor-pointer transition-normal ml-1 border-l border-grey-dark pl-4">ROUND 2</li>
@@ -97,7 +97,7 @@
                                                             </a>
 							</li>
                                                         <?php } ?>
-                                                         <?php 
+                                                         <?php
                                                         if($arr[2]==1) {
                                                         ?>
                                                         <li class="hover:text-indigo-dark hover:cursor-pointer transition-normal ml-1 border-l border-grey-dark pl-4">ROUND 3</li>
@@ -107,7 +107,7 @@
                                                             </a>
 							</li>
                                                         <?php } ?>
-                                                         <?php 
+                                                         <?php
                                                        if($arr[3]==1) {
                                                         ?>
                                                         <li class="hover:text-indigo-dark hover:cursor-pointer transition-normal ml-1 border-l border-grey-dark pl-4">ROUND 4</li>
@@ -123,24 +123,24 @@
 							<img src="./images/category-default.svg" alt="home-icon" class="w-4 h-4 mr-2">
 							<div class="hover:cursor-pointer text-white lg:text-indigo-darkest no-underline font-medium w-full relative">
 								TABLES
-								
+
 							</div>
-						
+
                                             <ul class="text-grey lg:text-grey-dark list-reset leading-loose mt-2" id="sidenav-categories">
                                                 <?php
                                                 if($arr[0]==1) { ?>
                                                 <li >
                                                     <a href="../tables/r1table.php"><span style="color:blue;">ROUND 1 TABLE</span>
                                                             </a>
-							</li> 
+							</li>
                                                 <?php }
                                                         ?><?php
                                                      if($arr[1]==1) {
-                                                        ?>   
+                                                        ?>
                                                         <li >
                                                             <a href="../tables/r2table.php"><span style="color:blue;">ROUND 2 TABLE</span>
                                                             </a>
-                                                     </li><?php } 
+                                                     </li><?php }
                                                      if($arr[2]==1) {
                                                         ?>
                                                         <li >
@@ -168,6 +168,6 @@
 					</li>
 				</ul>
 			</nav>
-                
+
         </body>
 </html>
