@@ -77,10 +77,10 @@
              <?php }                                   else { ?>
 
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="../signup.php">Signup</a>
+                <a class="nav-link js-scroll-trigger" href="../signup1.php">Signup</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="../login.php">Login</a>
+                <a class="nav-link js-scroll-trigger" href="../login1.php">Login</a>
             </li>
               <?php  } ?>
             </ul>

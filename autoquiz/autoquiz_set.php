@@ -39,6 +39,17 @@ window.addEventListener("popstate", function() {
 }, false);
 }(window, location));
 </script>
+<script>
+       function confirmation()
+       {
+            if(!confirm("Are you sure you want to submit?"))
+      window.location="../index.php";
+  else
+      window.location="autoquiz_submit.php";
+
+
+       }
+       </script>
      <script src="autoquiz-qual.js"></script>
 
 
@@ -52,7 +63,7 @@ window.addEventListener("popstate", function() {
       <div class="container">
         <a class="navbar-brand" href="../index.php">HOME</a>
 
-
+        <span id="time" class="font-normal"></span>
         <a class="btn btn-primary" href="autoquiz_leaderboard.php">Leaderboard</a>
       </div>
     </nav>
@@ -61,12 +72,7 @@ window.addEventListener("popstate", function() {
         include 'if_answered.php';
         ?>
 
-           <?php
-            $uid=$_SESSION['id'];
-         $upd="Update users set submit=1 where id='$uid'";
-         $upd_q=mysqli_query($con,$upd) or die(mysqli_error($con));
 
-           ?>
 
 
 <header class="masthead text-white text-center">
@@ -75,10 +81,12 @@ window.addEventListener("popstate", function() {
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <h3 class="mb-5">Next set will be uploaded at:</h3>
+            <button  class="btn btn-block btn-md btn-primary" onclick="confirmation();" > FINAL SUBMIT </button>
+
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
 
-            
+
 
 
           </div>
