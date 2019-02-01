@@ -8,7 +8,7 @@ require 'includes/common.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>AUTOMANIA</title>
+<title>ROADRANGERS</title>
 
 
 
@@ -116,16 +116,16 @@ window.addEventListener("popstate", function() {
 
     ?>
 								</tr>
-                                                              <tr>
+                                                                <tr>
 									<td></td>
 									<td></td>
 									<td>Total</td>
-									<td><?php echo $sum; ?></td>
+									<td><?php echo $sum; } ?></td>
 
 
 
 
-                </tr>
+                                                                </tr>
 
 					</tbody>
     </table>
