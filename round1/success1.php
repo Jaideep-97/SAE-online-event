@@ -116,17 +116,7 @@ window.addEventListener("popstate", function() {
 
     ?>
 								</tr>
-                                                        <!--        <tr>
-									<td></td>
-									<td></td>
-									<td>Total</td>
-									<td></td>
-
-
-
-
-                </tr> -->
-
+                                                      
 					</tbody>
     </table>
     <div style="text-align:center;">
