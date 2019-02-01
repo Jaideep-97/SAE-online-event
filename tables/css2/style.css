@@ -83,7 +83,7 @@ table td.r, table th.r {
   }
 
 }
-.bg {
+header {
   background: url("../img2.jpg")  ;
   background-repeat: no-repeat;
  background-size: cover;
