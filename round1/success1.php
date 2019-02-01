@@ -119,8 +119,8 @@ window.addEventListener("popstate", function() {
                                                                 <tr>
 									<td></td>
 									<td></td>
-									<td>Total</td>
-									<td><?php echo $sum; } ?></td>
+									<td></td>
+									<td></td>
 
 
 
