@@ -85,9 +85,10 @@ table td.r, table th.r {
 }
 .bg {
   background: url("../img2.jpg")  ;
+  background-repeat: no-repeat;
  background-size: cover;
     background-position: center;
-    height:100%;
+
   font: 400 14px 'Calibri','Arial';
   padding: 20px;
 }
