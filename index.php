@@ -48,12 +48,12 @@ require 'includes/common.php';
                                               $sel="Select submit1,submit2,submit3,submit4,score,submit,qual from users where id='$uid'";
                                               $selres=mysqli_query($con,$sel) or die(mysqli_error($con));
                                               $arr=mysqli_fetch_array($selres); ?>
-             <?php  if($arr['submit']=='0' && $i<3 ){ ?>
+             <?php  if($arr['submit']=='0' && $i<4 ){ ?>
 
 
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="autoquiz/autoquiz.php?id=<?php echo $i; ?>">Play now!</a>
                <?php }
-              else if($arr['submit']=='0' && $i==3 ){ ?>
+              else if($arr['submit']=='0' && $i==4 ){ ?>
 
 
                  <a class="btn btn-primary btn-xl js-scroll-trigger" href="autoquiz/autoquiz_leaderboard.php">Play now!</a>
