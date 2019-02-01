@@ -19,6 +19,7 @@ $re=mysqli_query($con,$sel) or diemysqli_error($con);
 
   <!-- Custom styles for this template -->
   <link href="css1/landing-page.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css4/style.css">
 
 
 
@@ -59,7 +60,6 @@ window.addEventListener("popstate", function() {
 </style>
 
   <title>AUTOMANIA</title>
-  <link rel="stylesheet" href="css4/style.css">
 
     </head>
     <body>
