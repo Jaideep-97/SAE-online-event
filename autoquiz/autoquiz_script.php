@@ -136,7 +136,7 @@ $_COOKIE['a']=1;
             <h1 class="mb-5">Correct Answer!</h1>
           </div>
           <div class=" col-md-4 col-lg-4 col-xl-4 mx-auto">
-            <?php  if($qid<15 || ($qid>20 && $qid<40) || ($qid>40 && $qid<60) ) { ?>
+            <?php  if($qid<2 ) { ?>
                 <div >
                   <button  class="btn btn-block btn-md btn-primary" onclick="location.href='autoquiz.php?id=<?php echo $qid+1; ?>'" > NEXT QUESTION </button>
                   <br />
