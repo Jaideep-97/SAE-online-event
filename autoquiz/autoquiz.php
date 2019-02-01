@@ -91,8 +91,9 @@ if($row[0]=='1')
                   <input  class="btn btn-block btn-lg btn-primary disabled" name="submit" value="Submit!" />
                   <br />
                 </div>
+                <?php if($qid<2) { ?>
                   <button  class="btn btn-block btn-lg btn-primary " onclick="location.href='autoquiz.php?id=<?php echo $qid+1; ?>'">Move to Next Question!</button>
-
+                <?php } ?>
 
                    <?php }
                  else { ?>
