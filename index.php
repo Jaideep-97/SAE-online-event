@@ -46,7 +46,7 @@ require 'includes/common.php';
             <p class="text-faded mb-5"></p>
 
                                                  <?php  if(isset($_SESSION['email'])) { $uid=$_SESSION['id'];
-                                              $sel="Select submit1,submit2,submit3,submit4,score,submit,qual from users where id='$uid'";
+                                              $sel="Select submit1,submit2,submit3,submit4,score,submit,qual,qual1,qual2,qual3 from users where id='$uid'";
                                               $selres=mysqli_query($con,$sel) or die(mysqli_error($con));
                                               $arr=mysqli_fetch_array($selres); ?>
              <?php  if($arr['submit']=='0' && $i<3 ){ ?>
@@ -79,7 +79,7 @@ require 'includes/common.php';
             {
               <a class="btn btn-primary btn-xl js-scroll-trigger" href="index.php">Play now!</a>
 
-            <?php } 
+            <?php }
 
 
                                                else if($arr[0]=='1' &&$arr[1]=='0') { ?>
