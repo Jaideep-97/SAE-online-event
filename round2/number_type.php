@@ -9,7 +9,7 @@ function count_type($type)
   $db = substr($url["path"], 1);
 
   $con = new mysqli($server, $username, $password, $db);
-  session_start();
+
   $userid=$_SESSION['id'];
 $sel_query="Select * from items_users where type='$type' and userid='$userid'";
 $sel_query_res=mysqli_query($con,$sel_query);

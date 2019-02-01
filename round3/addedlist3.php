@@ -50,7 +50,7 @@ else if($arr[1]==0 || $arr[2]==0 || $arr[3]==0)
     <div class="container">
 
 	 <div>
-             <button class="button button3" onclick="location.href='shop3.php'">Find items</button>
+             <button class="button button3" onclick="window.history.back();">Find items</button>
              <h2 style="color:#3498DB   ; float: right; font-family: Verdana, Arial, Helvetica, sans-serif"><b>Time left: <span id="time" class="text-danger"></span></b></h2></div>
              <h3> Rating for the round will be 0 if the car is left incomplete.</h3>
 

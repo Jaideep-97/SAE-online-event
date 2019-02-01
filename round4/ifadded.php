@@ -11,7 +11,7 @@ function if_added($item_id)
   $db = substr($url["path"], 1);
 
   $con = new mysqli($server, $username, $password, $db);
-  session_start();
+  
   $user_id= $_SESSION['id'];
     $select_query="Select * from items_users where itemid='$item_id' and userid='$user_id'";
     $select_query_res=mysqli_query($con,$select_query) or die(mysqli_error($con));
