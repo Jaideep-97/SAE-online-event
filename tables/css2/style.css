@@ -83,7 +83,7 @@ table td.r, table th.r {
   }
 
 }
-header {
+.bg {
   background: url("../img2.jpg")  ;
  background-size: cover;
     background-position: center;
