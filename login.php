@@ -1,4 +1,6 @@
-
+<?php
+require 'includes/common.php';
+?>
 <html lang="en" class="no-js">
 	<head>
 
