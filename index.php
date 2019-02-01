@@ -56,7 +56,7 @@ require 'includes/common.php';
               else if($arr['submit']=='0' && $i==3 ){ ?>
 
 
-                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="autoquiz/autoquiz_script.php?id=2">Play now!</a>
+                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="autoquiz/autoquiz_leaderboard.php">Play now!</a>
                 <?php }
 
             else if($arr['submit']=='1' && $arr['qual']=='0'){ ?>
