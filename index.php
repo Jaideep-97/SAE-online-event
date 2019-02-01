@@ -54,10 +54,10 @@ require 'includes/common.php';
 
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="autoquiz/autoquiz.php?id=<?php echo $i; ?>">Play now!</a>
                <?php }
-              else if($arr['submit']=='0' && $i==3 ){ ?>
+              else if($arr['submit']=='0' && ($i==5 || $i==10)){ ?>
 
 
-                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="autoquiz/autoquiz.php?id=2">Play now!</a>
+                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="autoquiz/autoquiz_set.php">Play now!</a>
                 <?php }
 
             else if($arr['submit']=='1' && $arr['qual']=='0'){ ?>

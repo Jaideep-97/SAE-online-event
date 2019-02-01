@@ -136,7 +136,7 @@ $_COOKIE['a']=1;
             <h1 class="mb-5">Correct Answer!</h1>
           </div>
           <div class=" col-md-4 col-lg-4 col-xl-4 mx-auto">
-            <?php  if($qid<10 ) { ?>
+            <?php  if($qid<5 || ($qid>=6 && $qid<10) || ($qid>=11 && $qid<15)  ) { ?>
                 <div >
                   <button  class="btn btn-block btn-md btn-primary" onclick="location.href='autoquiz.php?id=<?php echo $qid+1; ?>'" > NEXT QUESTION </button>
                   <br />
@@ -156,7 +156,7 @@ $_COOKIE['a']=1;
              { ?>
                <button  class="btn btn-block btn-lg btn-primary" onclick="confirmation();" > FINAL SUBMIT </button>
              <?php }  */
-             else if($qid==20)
+             else if($qid==5 || $qid==10)
              {
                ?>
                <h2>Next set of questions will be uploaded at: </h2>
