@@ -14,7 +14,7 @@ require 'includes/common.php';
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ROADRANGERS</title>
+    <title>AUTOMANIA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,9 +26,9 @@ require 'includes/common.php';
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.min.css" rel="stylesheet">
-  
-  
-  
+
+
+
       <link rel="stylesheet" href="css2/style.css">
        <script src="auto-submit4.js"></script>
      <style>
@@ -52,7 +52,7 @@ require 'includes/common.php';
 .button5 {border-radius: 50%;}
 </style>
 
-  
+
 </head>
 
     <body>
@@ -65,11 +65,11 @@ require 'includes/common.php';
         <br />
         <br />
         <br />
-        
+
         <div class="container">
        <h1 style="text-align:center; font-family: 'Georgia', serif; color:#CB4335  ;">ROUND 3 TABLE</h1>
         <table>
-            <thead>    
+            <thead>
             <tr>
                     <th><b>POSITION</b></th>
                     <th><b>NAME</b></th>
@@ -81,15 +81,15 @@ require 'includes/common.php';
             <tbody>
         <?php
         $c=0;
-        
+
        ?>
                  <br />
-       
-        
+
+
                 <?php
         $sel_query="Select name, points3,bal3 from users where submit3='1' order by points3 desc, bal3 desc";
         $sel_query_res=mysqli_query($con,$sel_query);
-      
+
         while($row=mysqli_fetch_array($sel_query_res))
         {
             $c+=1;
@@ -108,7 +108,7 @@ require 'includes/common.php';
         </tbody>
         </table>
         <?php
-        
+
         ?>
         </div>
              </header>

@@ -5,14 +5,14 @@ require 'includes/common.php';
 <!DOCTYPE html>
 <html >
 <head>
- 
+
  <meta charset="UTF-8">
        <link rel="stylesheet" href="css4/style.css">
        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ROADRANGERS</title>
+    <title>AUTOMANIA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,9 +24,9 @@ require 'includes/common.php';
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.min.css" rel="stylesheet">
-  
-  
-  
+
+
+
       <link rel="stylesheet" href="css2/style.css">
        <script src="auto-submit4.js"></script>
      <style>
@@ -50,25 +50,25 @@ require 'includes/common.php';
 .button5 {border-radius: 50%;}
 </style>
 
-  
+
 </head>
 
     <body>
        <?php include 'navbar.php';
          ?>
         <header>
-            
+
         <br />
         <br />
         <br />
         <br />
         <br />
         <br />
-        
+
         <div class="container">
        <h1 style="text-align:center; font-family: 'Georgia', serif; color:#CB4335  ;">ROUND 1 TABLE</h1>
         <table>
-            <thead>    
+            <thead>
             <tr>
                     <th><b>POSITION</b></th>
                     <th><b>NAME</b></th>
@@ -80,15 +80,15 @@ require 'includes/common.php';
             <tbody>
         <?php
         $c=0;
-        
+
        ?>
                  <br />
-       
-        
+
+
                 <?php
         $sel_query="Select name, points1,bal1 from users where submit1='1' order by points1 desc, bal1 desc";
         $sel_query_res=mysqli_query($con,$sel_query);
-      
+
         while($row=mysqli_fetch_array($sel_query_res))
         {
             $c+=1;
@@ -107,7 +107,7 @@ require 'includes/common.php';
         </tbody>
         </table>
         <?php
-        
+
         ?>
         </div>
         </header>
