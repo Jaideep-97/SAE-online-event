@@ -75,6 +75,7 @@ window.addEventListener("popstate", function() {
         $arr=mysqli_fetch_array($selre);
 
         ?>
+        <header>
          <h1 style="text-align:center; font-family: 'Georgia', serif; color:#CB4335  ;">LEADERBOARD</h1>
         <table >
             <thead>
@@ -151,6 +152,7 @@ window.addEventListener("popstate", function() {
          <?php
 }
          ?>
+       </header>
 
     </body>
 </html>
