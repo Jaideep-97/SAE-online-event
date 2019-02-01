@@ -132,7 +132,7 @@ window.addEventListener("popstate", function() {
              $upd="Update users set qual=1 where id='$uid'";
          $upd_q=mysqli_query($con,$upd) or die(mysqli_error($con));
          ?><div style="text-align: center  ;">
-              <button class="button button3" onclick="location.href='../round1/shop.php'" >MOVE TO NEXT ROUND!</button></div>     </div>
+              <button class="button button3" onclick="location.href='../index.php'" >HOME!</button></div>     </div>
          <?php
                 break;
              }
