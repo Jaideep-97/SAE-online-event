@@ -110,6 +110,7 @@ window.addEventListener("popstate", function() {
     <td>Confirmed!</td><?php }
     if($arr10[0]!=11)
         $r=0;
+      }
     ?>
 								</tr>
 
@@ -117,7 +118,7 @@ window.addEventListener("popstate", function() {
 
 
 
-                                                              
+
 
 					</tbody>
     </table>
