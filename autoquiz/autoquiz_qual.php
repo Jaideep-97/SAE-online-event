@@ -10,7 +10,16 @@ $re=mysqli_query($con,$sel) or diemysqli_error($con);
 <html>
     <head>
 
-        <meta charset="UTF-8">
+      <meta charset="UTF-8">
+     <link rel="stylesheet" href="css4/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css1/landing-page.min.css" rel="stylesheet">
+
 
 
   <script>
