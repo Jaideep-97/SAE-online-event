@@ -1,4 +1,4 @@
-<?php 
+<?php
 require 'includes/common.php';
 $uid=$_SESSION['id'];
 $sel="Select submit2,qual,qual1,qual2,qual3 from users where id='$uid'";
@@ -21,7 +21,7 @@ else if($arr[1]==0 || $arr[2]==0)
 	<head>
 
                 <script src="auto-submit2.js"></script>
-                <title>ROADRANGERS</title>
+                <title>AUTOMANIA</title>
 
 	</head>
 

@@ -12,11 +12,11 @@ if($arr[0]==1)
 <html >
 <head>
   <meta charset="UTF-8">
- <title>ROADRANGERS</title>
+ <title>RAUTOMANIA</title>
 
-  
-  
-  
+
+
+
       <link rel="stylesheet" href="css2/style.css">
        <script src="auto_submit.js"></script>
      <style>
@@ -40,14 +40,14 @@ if($arr[0]==1)
 .button5 {border-radius: 50%;}
 </style>
 
-  
+
 </head>
 <body>
-   
+
 	 <div>
              <button class="button button3" onclick="location.href='shop.php'">Find items</button>
-          
-    <table>			
+
+    <table>
         <thead>
         <tr>
 								<th>Item Number</th>
@@ -58,8 +58,8 @@ if($arr[0]==1)
         </tr>
                                             </thead>
                                             <tbody>
-							
-						
+
+
                                                              <?php
  $user_id=$_SESSION['id'];
     $select_query="Select * from items_users where userid='$user_id'";
@@ -78,11 +78,11 @@ if($arr[0]==1)
     else{
         $sum=0;
         $c=0;
-       
+
         while($row= mysqli_fetch_array($select_query_res))
     {
         $sum=$sum+$row[3];
-        
+
         $c+=1;
         ?>
 								<tr>
@@ -97,17 +97,17 @@ if($arr[0]==1)
 									<td></td>
 									<td>Total</td>
 									<td><?php echo $sum; } ?></td>
-                                                                        
-                                                                          
-                                                                        
-               
+
+
+
+
                                                                 </tr>
-                   
+
 					</tbody>
     </table>
-      
+
     <?php
-       
+
         $upd="Update users set points1='$r' where id='$user_id'";
         $upd_q=mysqli_query($con,$upd) or die(mysqli_error($con));
          $sel="Select totalpoints,points1,points2,points3,points4,balance,submit1 from users where id='$user_id'";
@@ -124,21 +124,21 @@ if($arr[0]==1)
         $upd_q=mysqli_query($con,$upd) or die(mysqli_error($con));
         ?>
          <?php
-       
+
          $sel="Select * from users order by points1 desc";
          $sel_q=mysqli_query($con,$sel) or die(mysqli_error($con));
          $uid=$_SESSION['id'];
-        
+
          $i=1;
          $k=0;
-         
+
          $sel1="Select balance,bal1 from users where id='$uid'";
                      $sel_q1=mysqli_query($con,$sel1) or die(mysqli_error($con));
                      $arr=mysqli_fetch_array($sel_q1);
          while($row=mysqli_fetch_array($sel_q))
          {
-             
-             
+
+
                  if($_SESSION['id']==$row['id']){
                      $k=1;
                      $sel="Select balance,bal1 from users where id='$uid'";
@@ -152,18 +152,16 @@ if($arr[0]==1)
                          $bal=$arr[1]+20;
                          break;
                      }
-                    
+
                  }
                  $i+=1;
          }
                      $upd="Update users set balance='$bal' where id='$uid'";
                      $upd_q=mysqli_query($con,$upd) or die(mysqli_error($con));
-                     
-                    
+
+
                  ?>
-        
+
         <button class="button button3" onclick="location.href='../round2/shop2.php'">Round 2</button>
     </body>
   </html>
-  
-  

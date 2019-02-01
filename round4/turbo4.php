@@ -19,7 +19,7 @@ else if($arr[1]==0 || $arr[2]==0 || $arr[3]==0)
 	<head>
 
                 <script src="auto-submit4.js"></script>
-                <title>ROADRANGERS</title>
+                <title>AUTOMANIA</title>
 
 	</head>
 

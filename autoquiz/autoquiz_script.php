@@ -22,7 +22,7 @@ if($row[0]=='1')
     <meta name="description" content="">
     <meta name="author" content="">
 
-   <title>ROADRANGERS</title>
+   <title>AUTOMANIA</title>
 <script>
    /*   (function(window, location) {
 history.replaceState(null, document.title, location.pathname+"#!/history");

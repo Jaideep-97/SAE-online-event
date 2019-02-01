@@ -12,7 +12,7 @@ if($arr[0]==1)
 <html >
 <head>
   <meta charset="UTF-8">
-<title>ROADRANGERS</title>
+<title>AUTOMANIA</title>
 
 
 

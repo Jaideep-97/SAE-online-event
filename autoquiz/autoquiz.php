@@ -19,7 +19,7 @@ if($row[0]=='1')
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ROADRANGERS</title>
+    <title>AUTOMANIA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
