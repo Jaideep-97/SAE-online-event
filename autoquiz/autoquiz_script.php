@@ -136,7 +136,7 @@ $_COOKIE['a']=1;
             <h1 class="mb-5">Correct Answer!</h1>
           </div>
           <div class=" col-md-4 col-lg-4 col-xl-4 mx-auto">
-            <?php  if($qid<3 ) { ?>
+            <?php  if($qid<2 ) { ?>
                 <div >
                   <button  class="btn btn-block btn-md btn-primary" onclick="location.href='autoquiz.php?id=<?php echo $qid+1; ?>'" > NEXT QUESTION </button>
                   <br />
@@ -156,12 +156,17 @@ $_COOKIE['a']=1;
              { ?>
                <button  class="btn btn-block btn-lg btn-primary" onclick="confirmation();" > FINAL SUBMIT </button>
              <?php }  */
+             else if($qid==2)
+             {
+               ?>
+               <h2>Next set of questions will be uploaded at: </h2>
+          <?php   }
              else {
-                /* $upd1="Update users set submit=1 where id='$userid'";
-                 $upres=mysqli_query($con,$upd1) or diemysqli_error($con); */
+                 $upd1="Update users set submit=1 where id='$userid'";
+                 $upres=mysqli_query($con,$upd1) or diemysqli_error($con);
               ?>
-              <h2>Next set of questions will be uploaded at: </h2>
-          <!--    <h2>Thank You for playing Round 1!</h2> -->
+            <!--  <h2>Next set of questions will be uploaded at: </h2> -->
+              <h2>Thank You for playing Round 1!</h2>
              <button  class="btn btn-block btn-lg btn-primary" onclick="location.href='autoquiz_leaderboard.php'" > LEADERBOARD </button>
        <?php } ?>
 
