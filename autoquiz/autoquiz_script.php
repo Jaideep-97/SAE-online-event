@@ -38,6 +38,7 @@ window.addEventListener("popstate", function() {
 }, false);
 }(window, location)); */
 </script>
+<script>
     if ( window.history.replaceState ) {
         window.history.replaceState( null, null, window.location."../index.php" );
     }
