@@ -24,13 +24,12 @@ $email=$_SESSION['email'];
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css1/landing-page.css" rel="stylesheet">
+    <link href="css1/landing-page.min.css" rel="stylesheet">
 
 
    <link rel="stylesheet" href="css4/style.css">
   </head>
     <body>
-
         <?php
         include 'navbar.php';
           $c=1;
@@ -38,6 +37,8 @@ $email=$_SESSION['email'];
         $selres=mysqli_query($con,$sel);
 
         ?>
+        <div class="bg">
+
         <header>
         <br />
         <br />
@@ -85,6 +86,7 @@ $email=$_SESSION['email'];
 
     <!-- Custom scripts for this template -->
     <script src="js1/creative.min.js"></script>
+  </div>
 
     </body>
 </html>

@@ -22,7 +22,7 @@ table thead tr {
 }
 table tbody tr {
   height: 48px;
-  
+
   border-bottom: 1px solid #E3F1D5;
 }
 table tbody tr:last-child {
@@ -81,7 +81,7 @@ table td.r, table th.r {
   table tbody tr td:nth-child(4):before {
     content: "Balance";
   }
-  
+
 }
 header {
   background: url("../img2.jpg")  ;
@@ -94,5 +94,5 @@ header {
 
 blockquote {
   color: white;
-  text-align: center;   
+  text-align: center;
 }
