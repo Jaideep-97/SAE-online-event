@@ -43,9 +43,6 @@ require 'includes/common.php';
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="index.php">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="rules.php">Rules</a>
-                </li>
 
                <?php
                                             if(isset($_SESSION['email'])) {?>
@@ -57,6 +54,9 @@ require 'includes/common.php';
                                               $s=$arr['score'];
                                               $i=($s/10)+1;
                                               ?>
+                                              <li class="nav-item">
+                                                  <a class="nav-link js-scroll-trigger" href="rules.php">Rules</a>
+                                                  </li>
 
 
             <?php if($arr['submit']=='0') {  ?>
