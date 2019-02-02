@@ -1,8 +1,8 @@
 <?php
 require 'includes/common.php';
 if(isset($_POST['submit'])){
-$email = mysqli_real_escape_string($con, $_POST['email']);
-$name = mysqli_real_escape_string($con, $_POST['name']);
+  $email = htmlspecialchars($_POST['email']);
+  $name = htmlspecialchars($_POST['name']);
 $contact = mysqli_real_escape_string($con, $_POST['contact']);
 
 $password = mysqli_real_escape_string($con, $_POST['password']);
