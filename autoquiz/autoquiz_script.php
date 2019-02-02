@@ -93,8 +93,8 @@ window.addEventListener("popstate", function() {
   <?php
 if(isset($_POST['submit']))
 {
-$qid=intval($_GET['id']);
-$ans=mysqli_real_escape_string($_POST['ans']);
+$qid=mysqli_real_escape_string($con,$_GET['id']);
+$ans=mysqli_real_escape_string($con,$_POST['ans']);
 
 
 
@@ -102,7 +102,7 @@ $ans=mysqli_real_escape_string($_POST['ans']);
 
 $userid=$_SESSION['id'];
   $stmt=$con->prepare"Insert into quiz_users(qid,uid)values(?,?)";
-    $stmt->bind_param("is",$qid,$userid);
+    $stmt->bind_param("ss",$qid,$userid);
     $stmt->execute();
 
 $sel="Select answer from quiz where id='$qid' ";
