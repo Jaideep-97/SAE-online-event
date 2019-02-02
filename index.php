@@ -68,10 +68,11 @@ require 'includes/common.php';
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="autoquiz/autoquiz_submit.php">Play now!</a>
 
             <?php }
-          /*    else if($arr['submit']=='1' && $arr['qual']=='1'){ ?>
+              else if($arr['submit']=='1' && $arr['qual']=='1'){ ?>
+                <h2>Round 2 will start at:</h2>
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="index.php">Play now!</a>
 
-              <?php } */
+              <?php }
             else if($arr[0]=='0') { ?>
 
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="round1/shop.php">Play now!</a>
