@@ -7,8 +7,8 @@ $contact = mysqli_real_escape_string($con, $_POST['contact']);
 
 $password = mysqli_real_escape_string($con, $_POST['password']);
 $p=$password;
-$stmt1 = $con->prepare('SELECT id FROM users WHERE email = ?');
-$stmt1->bind_param('s', $email); // 's' specifies the variable type => 'string'
+$stmt1 = $con->prepare('SELECT id FROM users WHERE email = ? or name=?');
+$stmt1->bind_param('ss', $email,$name); // 's' specifies the variable type => 'string'
 $password=md5($password);
 $stmt1->execute();
 $stmt1->store_result();
@@ -19,7 +19,7 @@ $row = $stmt1->num_rows;
 
 if($row>0)
 {
-    echo "<h2>Email id already exists. Try a different one</h2>";
+    echo "<h2>Email id or username already exists. Try a different one</h2>";
 }
 else
 {
