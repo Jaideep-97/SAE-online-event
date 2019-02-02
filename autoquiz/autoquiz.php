@@ -11,7 +11,7 @@ $s="Select score from users where id='$uid'";
 $se1=mysqli_query($con,$s) or die(mysqli_error($con));
 $r=mysqli_fetch_array($se1);
 $a=($r[0]/10)+1;
-if($a!=$qid)
+if($a!=$qid && ($a<=5))
     header("Location:autoquiz.php?id=$a");
 
 ?>
