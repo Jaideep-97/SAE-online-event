@@ -297,7 +297,7 @@ function noenter() {
 		<span><p style="float:left; font-size:0.7em; color:red;"> Only letters,numbers and spaces allowed.</p></span>
 
     <input type="text" class="sign-up-input" id="email" name="email" class="col-md-4" placeholder="What's your email?*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onkeypress="return noenter()" required autofocus>
-    <input type="text" class="sign-up-input" id="contact" name="contact" class="col-md-4" placeholder="What's your contact number?*" pattern="[0-9]"  maxlength="10" onkeypress="return noenter()" required autofocus>
+    <input type="text" class="sign-up-input" id="contact" name="contact" class="col-md-4" placeholder="What's your contact number?*" pattern="[0-9]+"  maxlength="10" onkeypress="return noenter()" required autofocus>
 
     <input type="password" class="sign-up-input" id="password" name="password" class="col-md-4" placeholder="Choose a password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeypress="return noenter()" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
 		 <span><p style="float:left; font-size:0.7em; color:red;"> Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</p></span>
