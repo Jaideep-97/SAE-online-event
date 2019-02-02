@@ -137,7 +137,7 @@ window.addEventListener("popstate", function() {
         $upd_q=mysqli_query($con,$upd) or die(mysqli_error($con));
         ?>
         <?php
-         $sel="Select * from users order by totalpoints desc";
+         $sel="Select * from users order by totalpoints desc, balance desc";
          $sel_q=mysqli_query($con,$sel) or die(mysqli_error($con));
          $uid=$_SESSION['id'];
 
