@@ -1,5 +1,5 @@
 <?php
-require 'includes/common.php';
+//require 'includes/common.php';
 if(isset($_POST['submit'])){
 $email = mysqli_real_escape_string($con, $_POST['email']);
 $name = mysqli_real_escape_string($con, $_POST['name']);
@@ -16,7 +16,7 @@ $result = $stmt1->bind_result($id);
 
 
 $row = $stmt1->num_rows;
-   
+
 if($row>0)
 {
     echo "<h2>Email id already exists. Try a different one</h2>";
@@ -30,17 +30,16 @@ $stmt->execute();
 
 $stmt->close();
 
-    
-    
-    
+
+
+
     header('Location:login.php');
-}    
 }
 }
-     
-     
+}
+
+
 
 
 
 ?>
-    
