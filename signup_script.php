@@ -1,5 +1,5 @@
 <?php
-//require 'includes/common.php';
+require 'includes/common.php';
 if(isset($_POST['submit'])){
 $email = mysqli_real_escape_string($con, $_POST['email']);
 $name = mysqli_real_escape_string($con, $_POST['name']);

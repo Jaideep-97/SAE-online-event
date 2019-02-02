@@ -275,6 +275,10 @@ input {
 }
 
   </style>
+	<script type="text/javascript">
+function noenter() {
+  return !(window.event && window.event.keyCode == 13); }
+</script>
 	</head>
 	<body id="page-top">
 
@@ -289,13 +293,14 @@ input {
     <form class="sign-up" method="POST" action="<?php echo htmlspecialchars('signup_script.php'); ?>" class="form-group">
     <h3 class="sign-up-title">Sign up in seconds</h3>
 
-    <input type="text" class="sign-up-input" name="name" id="name" class="col-md-4" placeholder="What's your username?*" required autofocus>
+    <input type="text" class="sign-up-input" name="name" id="name" class="col-md-4" placeholder="What's your username?*" pattern="[A-Za-z0-9]*$+" title="Only letters, numbers and spces allowed" onkeypress="return noenter()" required autofocus>
+		<span><p style="float:left; font-size:0.7em; color:red;"> Only letters,numbers and spaces allowed.</p></span>
 
-    <input type="text" class="sign-up-input" id="email" name="email" class="col-md-4" placeholder="What's your email?*" required autofocus>
-    <input type="text" class="sign-up-input" id="contact" name="contact" class="col-md-4" placeholder="What's your contact number?*" maxlength="10" required autofocus>
+    <input type="text" class="sign-up-input" id="email" name="email" class="col-md-4" placeholder="What's your email?*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onkeypress="return noenter()" required autofocus>
+    <input type="text" class="sign-up-input" id="contact" name="contact" class="col-md-4" placeholder="What's your contact number?*" pattern="[0-9]" minlength="10" maxlength="10" onkeypress="return noenter()" required autofocus>
 
-    <input type="password" class="sign-up-input" id="password" name="password" class="col-md-4" placeholder="Choose a password*" minlength="8" required >
-
+    <input type="password" class="sign-up-input" id="password" name="password" class="col-md-4" placeholder="Choose a password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeypress="return noenter()" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
+		 <span><p style="float:left; font-size:0.7em; color:red;"> Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</p></span>
     <input type="submit" name="submit" value="Sign me up!" class="sign-up-button">
   </form>
       </div>
