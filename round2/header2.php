@@ -28,7 +28,7 @@
 
 		<div class="bg-indigo-darker text-center p-4 px-6 flex items-center">
 			<div class="hidden lg:block lg:w-1/4 xl:w-1/5 pr-8">
-                            <a href="../index.php" class="text-sm text-right text-white py-2 px-3 hover:text-grey-dark no-underline hidden lg:block lg:w-1/3 px-6"><b>ROADRANGERS</b></a>
+                            <a href="../index.php" class="text-sm text-right text-white py-2 px-3 hover:text-grey-dark no-underline hidden lg:block lg:w-1/3 px-6"><b>AUTOMANIA</b></a>
 			</a>
 			</div>
 			<div class="lg:hidden pr-3" id="mobile-nav-trigger">

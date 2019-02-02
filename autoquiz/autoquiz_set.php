@@ -42,7 +42,7 @@ window.addEventListener("popstate", function() {
 <script>
        function confirmation()
        {
-            if(!confirm("Are you sure you want to submit?"))
+            if(!confirm("Are you sure you want to submit? You cannot attempt anymore questions if submitted."))
       window.location="../index.php";
   else
       window.location="autoquiz_submit.php";
@@ -80,7 +80,7 @@ window.addEventListener("popstate", function() {
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h3 class="mb-5">Next set will be uploaded at:</h3>
+            <h3 class="mb-5">Next set will be uploaded at 3rd Feb, 12am.</h3>
             <button  class="btn btn-block btn-md btn-primary" onclick="confirmation();" > FINAL SUBMIT </button>
 
           </div>
