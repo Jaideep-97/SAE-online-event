@@ -145,7 +145,7 @@ window.addEventListener("popstate", function() {
     ?>
       </div>
          <div class="container">
-         <div class="jumbotron" >
+        <div style="text-align: center  ;">
          <h2 style="font-family: 'Georgia', serif; color:white  ;text-align :center;">Sorry! You've been eliminated! </h2>
            <button class="button button3" onclick="location.href='../index.php'" >HOME!</button>
 
