@@ -87,7 +87,7 @@ require 'includes/common.php';
 
 
                 <?php
-        $sel_query="Select name, totalpoints,balance from users order by totalpoints desc, balance desc";
+        $sel_query="Select name, totalpoints,balance from users where qual=1 order by totalpoints desc, balance desc";
         $sel_query_res=mysqli_query($con,$sel_query);
 
         while($row=mysqli_fetch_array($sel_query_res))

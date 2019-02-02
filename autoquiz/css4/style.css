@@ -46,7 +46,7 @@ table td.r, table th.r {
 header {
   background: url("../img1.jpg");
     background-position: center;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat; */
   background-size: cover;
   font: 400 14px 'Calibri','Arial';
   padding: 20px;

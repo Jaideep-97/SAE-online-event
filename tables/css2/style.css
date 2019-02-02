@@ -85,7 +85,7 @@ table td.r, table th.r {
 }
 header {
   background: url("../img2.jpg")  ;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat; */
  background-size: cover;
     background-position: center;
 
