@@ -44,13 +44,14 @@ require 'includes/common.php';
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5"></p>
-            <h3>Round 1 will run till 3rd Feb, 5pm.</h3>
-            <h3>Round 2 5pm onwards</h3>
+
 
                                                  <?php  if(isset($_SESSION['email'])) { $uid=$_SESSION['id'];
                                               $sel="Select submit1,submit2,submit3,submit4,score,submit,qual,qual1,qual2,qual3 from users where id='$uid'";
                                               $selres=mysqli_query($con,$sel) or die(mysqli_error($con));
                                               $arr=mysqli_fetch_array($selres); ?>
+                                              <h3>Round 1 will run till 3rd Feb, 5pm.</h3>
+                                              <h3>Round 2 5pm onwards</h3>
              <?php if($arr['submit']=='0' && ($i==16 || $i==31)){ ?>
 
 
