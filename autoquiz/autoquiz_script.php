@@ -93,16 +93,17 @@ window.addEventListener("popstate", function() {
   <?php
 if(isset($_POST['submit']))
 {
-$qid=$_GET['id'];
-$ans=$_POST['ans'];
+$qid=intval($_GET['id']);
+$ans=mysqli_real_escape_string($_POST['ans']);
 
 
 
 
 
 $userid=$_SESSION['id'];
-$insquery="Insert into quiz_users(qid,uid)values('$qid','$userid')";
-$insres= mysqli_query($con, $insquery) or die(mysqli_error($con));
+  $stmt=$con->prepare"Insert into quiz_users(qid,uid)values(?,?)";
+    $stmt->bind_param("is",$qid,$userid);
+    $stmt->execute();
 
 $sel="Select answer from quiz where id='$qid' ";
 $selquery=mysqli_query($con,$sel) or die(mysqli_error($con));
