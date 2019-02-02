@@ -52,7 +52,7 @@ require 'includes/common.php';
                                               $arr=mysqli_fetch_array($selres); ?>
                                               <h3>Round 1 will run till 3rd Feb, 5pm.</h3>
                                               <h3>Round 2 3rd Feb,5pm-8pm</h3>
-             <?php if($arr['submit']=='0' && ($i==16 || $i==31)){ ?>
+             <?php if($arr['submit']=='0' && $i==31){ ?>
 
 
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="autoquiz/autoquiz_set.php">Play now!</a>

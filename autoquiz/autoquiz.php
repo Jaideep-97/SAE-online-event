@@ -11,7 +11,7 @@ $s="Select score from users where id='$uid'";
 $se1=mysqli_query($con,$s) or die(mysqli_error($con));
 $r=mysqli_fetch_array($se1);
 $a=($r[0]/10)+1;
-if($qid>=16)
+if($qid>=31)
   header("Location:autoquiz_set.php");
 if($a!=$qid)
     header("Location:autoquiz.php?id=$a");
@@ -99,7 +99,7 @@ if($a!=$qid)
                   <input  class="btn btn-block btn-lg btn-primary disabled" name="submit" value="Submit!" />
                   <br />
                 </div>
-                <?php if($qid<15 || $qid<30 || $qid<45) { ?>
+                <?php if($qid<30 || $qid<45) { ?>
                   <button  class="btn btn-block btn-lg btn-primary " onclick="location.href='autoquiz.php?id=<?php echo $qid+1; ?>'">Move to Next Question!</button>
                 <?php } ?>
 
