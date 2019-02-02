@@ -12,7 +12,7 @@ require 'includes/common.php';
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ROADRANGERS</title>
+    <title>AUTOMANIA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor1/bootstrap/css/bootstrap.min.css" rel="stylesheet">
