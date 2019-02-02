@@ -69,7 +69,7 @@ require 'includes/common.php';
 
             <?php }
               else if($arr['submit']=='1' && $arr['qual']=='1'){ ?>
-                <h2>Round 2 will start at:</h2>
+                <h2>Round 2 track 1 will start at:</h2>
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="index.php">Play now!</a>
 
               <?php }
@@ -79,6 +79,7 @@ require 'includes/common.php';
 
             <?php }
             /*  else if($arr['submit1']=='1' && $arr['qual1']=='1'){ ?>
+                <h2>Round 2 track 2 will start at:</h2>
                   <a class="btn btn-primary btn-xl js-scroll-trigger" href="index.php">Play now!</a>
 
                 <?php } */
@@ -91,6 +92,7 @@ require 'includes/common.php';
 
              <?php }
             /* else if($arr['submit2']=='1' && $arr['qual2']=='1'){ ?>
+            <h2>Round 2 track 3 will start at:</h2>
                  <a class="btn btn-primary btn-xl js-scroll-trigger" href="index.php">Play now!</a>
 
                <?php } */
@@ -100,6 +102,7 @@ require 'includes/common.php';
 
              <?php }
             /* else if($arr['submit3']=='1' && $arr['qual3']=='1'){ ?>
+            <h2>Round 2 track 4 will start at:</h2>
                  <a class="btn btn-primary btn-xl js-scroll-trigger" href="index.php">Play now!</a>
 
                <?php } */
