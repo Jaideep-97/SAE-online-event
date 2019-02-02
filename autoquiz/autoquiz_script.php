@@ -101,7 +101,7 @@ $ans=mysqli_real_escape_string($con,$_POST['ans']);
 
 
 $userid=$_SESSION['id'];
-  $stmt=$con->prepare"Insert into quiz_users(qid,uid)values(?,?)";
+  $stmt=$con->prepare("Insert into quiz_users(qid,uid)values(?,?)");
     $stmt->bind_param("ss",$qid,$userid);
     $stmt->execute();
 
