@@ -44,6 +44,8 @@ require 'includes/common.php';
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5"></p>
+            <h3>Round 1 will run till 3rd Feb, 5pm.</h3>
+            <h3>Round 2 5pm onwards</h3>
 
                                                  <?php  if(isset($_SESSION['email'])) { $uid=$_SESSION['id'];
                                               $sel="Select submit1,submit2,submit3,submit4,score,submit,qual,qual1,qual2,qual3 from users where id='$uid'";
@@ -56,7 +58,7 @@ require 'includes/common.php';
                <?php }
 
 
-             else if($arr['submit']=='0' && $i<16 ){ ?>
+             else if($arr['submit']=='0' && $i<46 ){ ?>
 
 
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="autoquiz/autoquiz.php?id=<?php echo $i; ?>">Play now!</a>
