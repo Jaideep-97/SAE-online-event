@@ -293,7 +293,7 @@ function noenter() {
     <form class="sign-up" method="POST" action="<?php echo htmlspecialchars('signup_script.php'); ?>" class="form-group">
     <h3 class="sign-up-title">Sign up in seconds</h3>
 
-    <input type="text" class="sign-up-input" name="name" id="name" class="col-md-4" placeholder="What's your username?*" pattern="[A-Za-z0-9]*$+" title="Only letters, numbers and spces allowed" onkeypress="return noenter()" required autofocus>
+    <input type="text" class="sign-up-input" name="name" id="name" class="col-md-4" placeholder="What's your username?*" pattern="^[0-9a-zA-Z ]+$" title="Only letters, numbers and spces allowed" onkeypress="return noenter()" required autofocus>
 		<span><p style="float:left; font-size:0.7em; color:red;"> Only letters,numbers and spaces allowed.</p></span>
 
     <input type="text" class="sign-up-input" id="email" name="email" class="col-md-4" placeholder="What's your email?*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onkeypress="return noenter()" required autofocus>
