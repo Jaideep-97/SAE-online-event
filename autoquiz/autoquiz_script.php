@@ -158,7 +158,7 @@ $_COOKIE['a']=1;
              { ?>
                <button  class="btn btn-block btn-lg btn-primary" onclick="confirmation();" > FINAL SUBMIT </button>
              <?php }  */
-             else if($qid==15 || $qid==30)
+             else if($qid==30)
              {
                ?>
                <h2>Next set of questions will be uploaded at 3rd Feb, 12am </h2>
